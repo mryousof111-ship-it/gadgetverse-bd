@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GadgetVerse BD | Smartphones & Laptops</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#111827}
+header{background:#071a35;color:white;position:sticky;top:0;z-index:20}.nav{max-width:1180px;margin:auto;padding:15px 18px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:24px;font-weight:800}.logo b{color:#4da3ff}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{background:linear-gradient(135deg,#071a35,#0b5ca8);color:#fff;padding:70px 18px}.wrap{max-width:1180px;margin:auto}.hero h1{font-size:48px;margin:0 0 12px}.hero p{font-size:18px;max-width:650px;line-height:1.6}.btn{display:inline-block;background:#fff;color:#071a35;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700}
+section{padding:45px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.cat,.product,.info{background:#fff;border-radius:14px;padding:18px;box-shadow:0 6px 22px #0000000b}.cat{text-align:center;font-size:18px;font-weight:700}.cat span{font-size:42px;display:block;margin-bottom:8px}
+.product .pic{height:150px;border-radius:10px;background:#eaf3ff;display:flex;align-items:center;justify-content:center;font-size:60px}.product h3{margin-bottom:6px}.price{font-weight:800;font-size:20px;margin:12px 0}.order{background:#071a35;color:#fff;padding:10px 14px;border-radius:7px;text-decoration:none;display:inline-block}
+.search{width:100%;padding:14px;border:1px solid #d0d5dd;border-radius:9px;font-size:15px;margin:10px 0 20px}
+footer{background:#071a35;color:#fff;text-align:center;padding:30px 18px}.muted{color:#667085}
+@media(max-width:700px){.hero h1{font-size:36px}nav a{margin-left:7px;font-size:12px}}
+</style></head>
+<body>
+<header><div class="nav"><div class="logo">Gadget<b>Verse</b> BD</div><nav>
+<a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></header>
+
+<div class="hero" id="home"><div class="wrap">
+<h1>Smart Tech. Better Choice.</h1>
+<p>GadgetVerse BD — your online destination for smartphones, laptops and everyday technology.</p>
+<a class="btn" href="#shop">Shop Now</a>
+</div></div>
+
+<section><div class="wrap"><h2>Shop by Category</h2><div class="grid">
+<div class="cat"><span>📱</span>Smartphones</div><div class="cat"><span>💻</span>Laptops</div><div class="cat"><span>🎧</span>Accessories</div><div class="cat"><span>⌚</span>Smart Devices</div>
+</div></div></section>
+
+<section id="shop"><div class="wrap"><h2>Featured Products</h2>
+<input class="search" id="search" placeholder="Search phones, laptops or accessories..." oninput="filterProducts()">
+<div class="grid" id="products">
+<div class="product" data-name="smartphone"><div class="pic">📱</div><h3>Premium Smartphone</h3><p class="muted">8GB RAM • 256GB Storage</p><div class="price">৳ 00,000</div><a class="order" href="https://wa.me/8801620152864?text=Hello%20GadgetVerse%20BD%2C%20I%20want%20to%20order%20the%20Premium%20Smartphone.">Order on WhatsApp</a></div>
+<div class="product" data-name="laptop"><div class="pic">💻</div><h3>Performance Laptop</h3><p class="muted">Core i5 • 16GB RAM • 512GB SSD</p><div class="price">৳ 00,000</div><a class="order" href="https://wa.me/8801620152864?text=Hello%20GadgetVerse%20BD%2C%20I%20want%20to%20order%20the%20Performance%20Laptop.">Order on WhatsApp</a></div>
+<div class="product" data-name="earbuds"><div class="pic">🎧</div><h3>Wireless Earbuds</h3><p class="muted">Clear sound • Long battery</p><div class="price">৳ 0,000</div><a class="order" href="https://wa.me/8801620152864?text=Hello%20GadgetVerse%20BD%2C%20I%20want%20to%20order%20the%20Wireless%20Earbuds.">Order on WhatsApp</a></div>
+</div></div></section>
+
+<section id="about"><div class="wrap"><h2>Why GadgetVerse BD?</h2><div class="grid">
+<div class="info"><h3>✓ Quality Products</h3><p>Reliable products with clear product information.</p></div>
+<div class="info"><h3>✓ Easy Ordering</h3><p>Order directly through WhatsApp from any device.</p></div>
+<div class="info"><h3>✓ Friendly Support</h3><p>Contact us for help choosing your next phone or laptop.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Contact GadgetVerse BD</h2><div class="info">
+<p>📱 WhatsApp / Phone: <b>01620152864</b></p><p>📍 Bangladesh</p>
+<a class="order" href="https://wa.me/8801620152864?text=Hello%20GadgetVerse%20BD%2C%20I%20want%20to%20know%20about%20your%20products.">Chat on WhatsApp</a>
+</div></div></section>
+
+<footer>© 2026 GadgetVerse BD • Your Tech, Our Priority.</footer>
+<script>
+function filterProducts(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.product').forEach(p=>p.style.display=p.innerText.toLowerCase().includes(q)?'block':'none')}
+</script>
+</body></html>
